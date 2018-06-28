@@ -1,5 +1,5 @@
 runtime: java
-env: 2
+env: standard
 
 handlers:
 - url: /.*
