@@ -19,8 +19,7 @@ public class DnaEntity implements Serializable{
     public DnaEntity() {
     }
 
-    public DnaEntity(int id, String dnaSequence, boolean isMutant) {
-        this.id = id;
+    public DnaEntity(String dnaSequence, boolean isMutant) {
         this.dnaSequence = dnaSequence;
         this.isMutant = isMutant;
     }

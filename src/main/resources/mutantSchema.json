@@ -1,0 +1,34 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "statusCode": {
+      "type": "string",
+      "title": "The Statuscode Schema ",
+      "default": ""
+    },
+    "statusText": {
+      "type": "string",
+      "title": "The Statustext Schema ",
+      "default": ""
+    },
+    "result": {
+      "type": "object",
+      "properties": {
+        "dnaSequencing": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "title": "The 0th Schema ",
+            "default": ""
+          }
+        },
+        "mutant": {
+          "type": "boolean",
+          "title": "The Mutant Schema ",
+          "default": false
+        }
+      }
+    }
+  }
+}

@@ -14,6 +14,11 @@ public class DnaApi {
     @Autowired
     DnaServiceImpl dnaService;
 
+    @RequestMapping("/")
+    public String home(){
+        return "Welcome to Mutant Application";
+    }
+
     @RequestMapping(value = "/mutant/", method = RequestMethod.POST)
     public MutantResponse<DnaResponse> isMutant(@RequestBody DnaRequest dnaRequest, MutantResponse<DnaResponse> dnaResponse) {
         dnaResponse.setResult(dnaService.isMutant(dnaRequest));
