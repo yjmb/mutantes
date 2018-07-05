@@ -6,7 +6,7 @@ Es una aplicacion desarrollada con Java Spring Boot, que detecta si un humano es
 ## Servicios disponibles:
 1. POST → [IP DE SERVIDOR: PUERTO]/mutant/
   Recibe un archivo Json con la siguiente estructura:
-  { “dna”:["ATGCGA","CAGTGC","TTATGT","AGAAGG","CCCCTA","TCACTG"] } 
+  { “dnaSequencing”:["ATGCGA","CAGTGC","TTATGT","AGAAGG","CCCCTA","TCACTG"] } 
   Este array de Strings representan cada fila de una tabla de (NxN) con la secuencia del ADN. 
    
   En caso de verificar un mutante, devuelve HTTP 200-OK, en caso contrario un 403-Forbidden
